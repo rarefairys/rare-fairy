@@ -1,0 +1,1312 @@
+<html lang="en">
+
+<head>
+    <link rel="Website Icon" type="png"
+          href="./img/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Nunito&family=Palanquin+Dark:wght@500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rare Fairy</title>
+    <style>
+a {
+  color: black;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #E75480;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #E75480;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navtop">
+            <div class="navItem">
+                <h2><font face="MV Boli">Rare Fairy</font></h2>
+            </div>
+            <div class="navItem">
+             
+            </div>
+
+        <div class="navBottom">
+            <h3 class="menuItem"><font face="MV Boli"><a href="index.html"Font color="white">Home</a></font></h3>
+            <h3 class="menuItem"><font face="MV Boli"><a href="jewellery.html">jewellery & Accessories</a></font></h3>
+            <h3 class="menuItem"><font face="MV Boli"><a href="Skin.html">Skin & Haircare</a></font></h3>
+            <h3 class="menuItem"><font face="MV Boli"><a href="gift.html">Gift Items</a></font></h3>
+<h3 class="menuItem"><font face="MV Boli">      <?php
+        $count=0;
+        if(isset($_SESSION['cart']))
+        {
+          $count=count($_SESSION['cart']);
+        }
+      ?>
+      <a href="mycart.php" class="btn btn-success">My Cart</a></font></h3>
+        </div>
+    </nav>
+        </div>
+    </div>
+<h2 style="text-align:center">jewellery & Accessories
+</h2>
+
+
+
+
+<table>
+
+<tr>
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p30.jpeg"height="290"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Mirror jhumka</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;179</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Mirror jhumka">
+              <input type="hidden" name="Price" value="179">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p29.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Earrings (beaded)</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;109</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Earrings (beaded)">
+              <input type="hidden" name="Price" value="109">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p28.jpeg"height="275"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title"> chain with earrings<br> ( pearl beaded)</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;179</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value=" chain with earrings ( pearl beaded)">
+              <input type="hidden" name="Price" value="179">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+ <td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p27.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Beaded earrings</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;149</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Beaded earrings">
+              <input type="hidden" name="Price" value="149">
+            </div>
+          </div>
+        </form>
+      </div></td>     
+
+
+
+ <td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p26.jpeg"height="290"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Charms earrings</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;179</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Charms earrings">
+              <input type="hidden" name="Price" value="179">
+            </div>
+          </div>
+        </form>
+      </div></td>   
+</tr>
+
+
+
+<tr>
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p21.jpeg"height="290"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Ghungroo anklets 2pcs</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;130</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Ghungroo anklets 2pcs">
+              <input type="hidden" name="Price" value="130">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p22.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Cowrie shells anklet 1pc</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;79</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Cowrie shells anklet 1pc)">
+              <input type="hidden" name="Price" value="79">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p23.jpeg"height="290"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Earrings,crystal Beads</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;179</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Earrings,crystal Beads">
+              <input type="hidden" name="Price" value="179">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+ <td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p24.jpeg"height="280"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Flower neckpiece with earrings <br>( brass metal)</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;229</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Flower neckpiece with earrings ( brass metal)">
+              <input type="hidden" name="Price" value="229">
+            </div>
+          </div>
+        </form>
+      </div></td>     
+
+
+
+ <td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p25.jpeg"height="270"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Earrings<br> (fabric materials)</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;179</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Earrings (fabric materials)">
+              <input type="hidden" name="Price" value="179">
+            </div>
+          </div>
+        </form>
+      </div></td>   
+</tr>
+
+
+<tr>
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p16.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Stud</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;150</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Stud">
+              <input type="hidden" name="Price" value="150">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p17.jpeg"height="285"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Neckpiece with earrings <br>(you can buy it separately)</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;229</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Neckpiece with earrings (you can buy it separately)">
+              <input type="hidden" name="Price" value="229">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p18.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Pearl earrings</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;149</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Pearl earrings">
+              <input type="hidden" name="Price" value="149">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+ <td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p019.jpeg"height="310"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Kundan & ghungroo earrings</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;229</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Kundan & ghungroo earrings">
+              <input type="hidden" name="Price" value="229">
+            </div>
+          </div>
+        </form>
+      </div></td>     
+
+
+
+ <td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p20.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Small kundan jhumka</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;179</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Small kundan jhumka">
+              <input type="hidden" name="Price" value="179">
+            </div>
+          </div>
+        </form>
+      </div></td>   
+</tr>
+
+
+
+  <tr><td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p01.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Cowrie shells Neck piece</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;129</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Cowrie shells Neck piece">
+              <input type="hidden" name="Price" value="129">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p02.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Ghoongroo Stud </h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;119</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Ghoongroo Stud">
+              <input type="hidden" name="Price" value="119">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p03.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Small stud</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;119</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Small stud">
+              <input type="hidden" name="Price" value="119">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p04.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Rainbow stone earrings</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;160</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Rainbow stone earrings">
+              <input type="hidden" name="Price" value="160">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p05.jpeg"height="285"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Rainbow stone mirror work choker set</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;209</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Rainbow stone mirror work choker set">
+              <input type="hidden" name="Price" value="209">
+            </div>
+          </div>
+        </form>
+      </div></td>
+</tr>
+
+<tr>
+  
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p06.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Pearl earrings </h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;180</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Pearl earrings">
+              <input type="hidden" name="Price" value="180">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p07.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Cowrie shells earrings</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;179</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Cowrie shells earrings">
+              <input type="hidden" name="Price" value="179">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p08.jpeg"height="285"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Cowrie shells bangles(3pcs) you can purchase single piece also</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;330</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Cowrie shells bangles(3pcs) you can purchase single piece also">
+              <input type="hidden" name="Price" value="330">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p09.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Pearl choker</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;129</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Pearl choker">
+              <input type="hidden" name="Price" value="129">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p10.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Pearl neckpiece bow style</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;130</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Pearl neckpiece bow style">
+              <input type="hidden" name="Price" value="130">
+            </div>
+          </div>
+        </form>
+      </div></td></tr>
+
+
+<tr>
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p11.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Flower Pearl choker</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;160</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Flower Pearl choker">
+              <input type="hidden" name="Price" value="160">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p12.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Coin Earrings</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;229</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Coin Earrings">
+              <input type="hidden" name="Price" value="229">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p13.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Bangle's (3pcs)</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;180</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Bangle's (3pcs)">
+              <input type="hidden" name="Price" value="180">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+ <td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p14.jpeg"height="285"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Long neckpiece with earrings,cowrie shells</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;189</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Long neckpiece with earrings,cowrie shells">
+              <input type="hidden" name="Price" value="189">
+            </div>
+          </div>
+        </form>
+      </div></td>     
+
+
+
+ <td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p15.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h2 class="card-title">Flowers print choker</h2>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;199</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Flowers print choker">
+              <input type="hidden" name="Price" value="199">
+            </div>
+          </div>
+        </form>
+      </div></td>   
+</tr>
+
+
+<tr>
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p31.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Red Cowrie shells earrings</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;180</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Red Cowrie shells earrings">
+              <input type="hidden" name="Price" value="180">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p32.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Cowrie shells earrings(purple)</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;229</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Cowrie shells earrings(purple)">
+              <input type="hidden" name="Price" value="229">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+<td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p33.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Necklace with earrings</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;159</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Necklace with earrings">
+              <input type="hidden" name="Price" value="159">
+            </div>
+          </div>
+        </form>
+      </div></td>
+
+
+ <td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p34.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Green Cowrie shells earrings</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;229</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Green Cowrie shells earrings">
+              <input type="hidden" name="Price" value="229">
+            </div>
+          </div>
+        </form>
+      </div></td>     
+
+
+
+ <td>
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <form action="manage_cart.php" method="POST">
+          <div class="card">
+            <img src="img/p35.jpeg"height="300"width="300"class="card-img-top">
+            <div class="card-body text-center">
+              <h3 class="card-title">Golden pearl neckpiece with stud</h3>
+               <a href="https://wa.me/+918159839977">
+               <img src="./img/wpo.png"height="40"width="150"></a>
+              <p class="card-text">Price:&#x20b9;140</p>
+               <div class="starr">
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+              <span class="fa fa-star cheaked"></span>
+        </div>
+              <h5>Hand crafted jewellery ( color & design <br>
+                customisable + all India delivery available)</h5>
+
+              <button type="submit" name="Add_To_Cart" class="btn btn-info">Add To Cart</button>
+              <input type="hidden" name="Item_Name" value="Golden pearl neckpiece with stud">
+              <input type="hidden" name="Price" value="140">
+            </div>
+          </div>
+        </form>
+      </div></td>   
+</tr>
+
+
+</table>  
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem"><a href="jewellery.html">jewellery & Accessories</a></li>
+                    <li class="fListItem"><a href="Skin.html">Skin & Haircare</a></li>
+                    <li class="fListItem"><a href="gift.html">Gift Items</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Mail Us:</h1>
+                <ul class="fList">
+                    <li class="fListItem">Rare Fairy Internet Private Limited,<br>
+                    Mathabhanga,Coochbehar,736146,<br>
+                    West Bengal, India<br>
+                </li>
+                 
+                </ul>
+                   
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+              
+            </div>
+
+                <div class="footerRightMenu">
+                <h1 class="fMenuTitle">
+  <h1><a href="https://www.facebook.com/meowow02riya" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/riasrarefairy?igsh=MWJvamhjYmllMDhmcQ==" class="fa fa-instagram"></a>
+<a href="https://wa.me/+918159839977" class="fa fa-whatsapp"></a>
+<a href="mailto:riasrarefairy@gmail.com" class="fa fa-envelope"></a></h1>
+
+                </h1>
+
+
+                </h1>
+              
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@Rare Fairy. All rights reserved. 2024.</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
